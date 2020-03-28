@@ -1,3 +1,7 @@
 {
-    "python.pythonPath": "/Users/roytta/.pyenv/versions/3.8.0/bin/python3.8"
+    "python.pythonPath": "/Users/roytta/.pyenv/versions/3.8.0/bin/python3.8",
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
 }
