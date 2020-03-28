@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "hmtest"
+version = "0.1.0"
+authors = ["Pekka Röyttä <roytta@gmail.com>"]
+description = "The hypermodern Python project"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/pekkaRo/hmtest"
+repository = "https://github.com/pekkaRo/hmtest"
+keywords = ["hypermodern"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^7.1.1"
+requests = "^2.23.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.1"
+coverage = {extras = ["toml"], version = "^5.0.4"}
+pytest-cov = "^2.8.1"
+pytest-mock = "^2.0.0"
+
+[tool.poetry.scripts]
+hmtest = "hmtest.console:main"
+
+[tool.coverage.run]
+branch = true
+source = ["hmtest"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 99
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
