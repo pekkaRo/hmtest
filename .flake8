@@ -1,5 +1,8 @@
 [flake8]
-select = BLK, C, E, F, W
-ignore = E203, W503
-max-line-length = 88
+select = B, B9, BLK, C, E, F, I, S, W
+ignore = E203, E501, W503
+max-line-length = 80
 max-complexity = 10
+application-import-names = hmtest, tests
+import-order-style = google
+per-file-ignores = tests/*:S101
