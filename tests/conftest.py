@@ -1,5 +1,6 @@
 import pytest
 
+
 @pytest.fixture
 def mock_requests_get(mocker):
     mock = mocker.patch("requests.get")
@@ -8,6 +9,7 @@ def mock_requests_get(mocker):
         "extract": "Lorem ipsum dolor sit amet",
     }
     return mock
+
 
 def pytest_configure(config):
     config.addinivalue_line("markers", "e2e: mark as end-to-end test.")
