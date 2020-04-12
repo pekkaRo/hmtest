@@ -1,3 +1,4 @@
+"""Client for the Wikipedia REST API, version 1."""
 from dataclasses import dataclass
 
 import click
@@ -11,6 +12,13 @@ API_URL: str = "https://{language}.wikipedia.org/api/rest_v1/page/random/summary
 
 @dataclass
 class Page:
+    """Page resource.
+
+    Attributes:
+        title: The title of the Wikipedia page.
+        extract: A plain text summary
+    """
+
     title: str
     extract: str
 
