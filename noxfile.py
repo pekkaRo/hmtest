@@ -2,7 +2,7 @@ import tempfile
 from typing import Any
 
 import nox
-from nox import Session
+from nox.sessions import Session
 
 package = "hmtest"
 
