@@ -3,6 +3,7 @@ name = "hmtest"
 version = "0.2.0"
 authors = ["Pekka Röyttä <roytta@gmail.com>"]
 description = "The hypermodern Python project"
+documentation = "https://hypermodern-python.readthedocs.io"
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/pekkaRo/hmtest"
